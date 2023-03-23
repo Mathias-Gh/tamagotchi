@@ -1,0 +1,209 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    background-color: darkcyan;
+}
+h1{
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 25px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+    height: 26.5rem;
+    margin: auto;
+}
+hr{
+    margin: 0;
+}
+button{
+    padding: 11px;
+    font-size: 20px;
+    border-radius: 0;
+    border: 1px solid black;
+    color: black;
+    border-right: 0;
+}
+.result{
+    width: 50%;
+    margin-top: 40px;
+}
+.register{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.name{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    line-height: 2;
+}
+label{
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    padding: 15px;
+    color: white;
+    margin: 15px 15px 15px 0;
+    border-radius: 12px;
+    width: 45%;
+}
+.register > div{
+    width: 100%;
+}
+#confirm{
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+input{
+    color: black;
+    padding: 15px;
+    margin: 15px 0 15px 15px;
+    border-radius: 12px;
+    border: 0;
+    width: 45%;
+}
+.j-center{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.result button:not(#normal button){
+    flex-basis: 20%;
+}
+h2{
+    height: 0;
+    margin: 0;
+    color: white;
+}
+#all-btn{
+    justify-content: space-between;
+}
+.none{
+    display: none;
+}
+section{
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+button {
+   background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+   border: 0;
+   border-radius: 12px;
+   color: #FFFFFF;
+   cursor: pointer;
+   display: inline-block;
+   font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+   font-weight: 500;
+   line-height: 2.5;
+   outline: transparent;
+   text-align: center;
+   text-decoration: none;
+   transition: box-shadow .2s ease-in-out;
+   user-select: none;
+   -webkit-user-select: none;
+   touch-action: manipulation;
+   white-space: nowrap;
+}
+
+button:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+button:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+.disabled{
+    cursor: default;
+    opacity: .75;
+}
+.flex{
+    display: flex;
+}
+.block{
+    display: block;
+}
+.result button{
+    padding: 15px;
+    width: 46.5%;
+}
+.name button{
+    width: 74%;
+    margin: 15px;
+}
+.not{
+    opacity: 1;
+    cursor: pointer;
+}
+@media screen and (max-width: 1065px) and (min-width: 686px){
+    main{
+        flex-direction: column;
+    }
+    .name button{
+        width: 95%;
+    }
+    img{
+        display: block;
+    }
+    .result{
+        width: 90%;
+    }
+    section{
+        font-size: 20px;
+    }
+    .register{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 685px){
+    .name button{
+        width: 95%;
+    }
+    img{
+        display: block;
+    }
+    #all-btn{
+        flex-wrap: wrap;
+    }
+    .result{
+        width: 90%;
+    }
+    section{
+        font-size: 20px;
+    }
+    .register{
+        width: 85%;
+    }
+    #all-btn button{
+        margin: 15px 0;
+        flex-basis: 45% !important;
+    }
+    #normal button{
+        width: 100%;
+    }
+    #all-btn button:first-of-type{
+        order: -1;
+    }
+    #all-btn button:nth-of-type(2){
+        order: 2;
+    }
+    #all-btn button:nth-of-type(3){
+        order: 3;
+    }
+    #all-btn button:last-of-type{
+        order: 1;
+    }
+}

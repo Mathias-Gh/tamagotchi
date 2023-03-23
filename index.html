@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tamagotchi</title>
+</head>
+<body>
+    <header>
+        <h1>Tamagotchi</h1>
+        <hr>
+    </header>
+    <main>
+        <div class="register">
+            <div>
+                <div class="name">
+                    <label for="name">comment s'appelle votre chat ?</label>
+                    <input type="text" placeholder="Nom" id="name">
+                </div>
+                <button id="confirm">confirmer</button>
+            </div>
+            <img src="img/normal.png" alt="#" id="cat" class="none">
+        </div>
+        <div id="alert"></div>
+        <div class="result">
+            <section class="none">
+                <p id="valeur-1">Énergie : <span id="energie">50</span>/100</p>
+                <p id="valeur-2">Faim : <span id="faim">50</span>/100</p>
+                <p id="valeur-3">Plaisir : <span id="plaisir">50</span>/100</p>
+                <p id="valeur-4">Stress : <span id="stress">50</span>/100</p>
+            </section>
+            <div id="all-btn" class="none">
+                <button id="sleep">Dormir</button>
+                <button id="eat">Manger</button>
+                <button id="play">Jouer</button>
+                <button id="shower">douche</button>
+            </div>
+            <div id="normal" class="none">
+                <button id="basic">Réinitialiser</button>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
